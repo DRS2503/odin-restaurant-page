@@ -1,3 +1,63 @@
-body{
-    background-color: purple;
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+/* Generic Styles */
+.container{
+    padding: 1rem;
+}
+
+.flex-center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.flex-jcenter{
+    display: flex;
+    justify-content: center;
+    flex: 1;
+}
+
+.small-gap{
+    gap: 1rem;
+}
+
+
+/* Header Elements*/
+header{
+    background-color: lightgrey;
+    display: flex;
+    justify-content: center;
+}
+
+nav{
+    display: flex;
+    flex: 1;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1000px;
+}
+
+button{
+    border: none;
+    padding: .25rem .75rem;
+    border-radius: 1rem;
+}
+
+button:hover{
+    background-color: aquamarine;
+}
+
+/* Main Section */
+#content{
+    
+}
+
+img{
+    width: 400px;
+    height: 400px;
 }
