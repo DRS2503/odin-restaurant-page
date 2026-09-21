@@ -5,6 +5,23 @@ import { menuPage } from './Menu.js'
 console.log('hello');
 
 homePage();
-aboutPage();
-menuPage();
+
+const contentDiv = document.querySelector('#content');
+const homeBtn = document.getElementById('home');
+homeBtn.addEventListener('click', () => {
+    contentDiv.textContent = ''
+    homePage();
+})
+
+const aboutBtn = document.getElementById('about');
+aboutBtn.addEventListener('click', () => {
+    contentDiv.textContent = ''
+    aboutPage();
+})
+
+const menuBtn = document.getElementById('menu');
+menuBtn.addEventListener('click', () => {
+    contentDiv.textContent = ''
+    menuPage();
+})
 
